@@ -4,8 +4,7 @@ export default $config({
   app(input) {
     return {
       name: "tutorial-sst-drizzle-rds",
-      removal: input?.stage === "production" ? "retain" : "remove",
-      protect: ["production"].includes(input?.stage),
+      removal: "remove",
       home: "aws",
       providers: {
         aws: {

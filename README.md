@@ -31,25 +31,10 @@ This example demonstrates how to:
    npx sst dev
    ```
 
-3. Generate and run migrations:
+3. In a separate terminal window, generate and run migrations:
    ```bash
    npm run db generate
    npm run db migrate
-   ```
-
-4. Run migrations on production:
-   ```bash
-   npx sst tunnel --stage production
-   ```
-
-   Then in a separate terminal window:
-   ```bash
-   npx sst shell --stage production npx drizzle-kit push
-   ```
-
-4. Deploy to production:
-   ```bash
-   npx sst deploy --stage production
    ```
 
 ## Features
